@@ -17,7 +17,7 @@
     height: 64px;
     align-items: center;
     color: #fff;
-    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .left-entry .entry-title svg {
@@ -47,7 +47,7 @@
     padding: 0 8px;
 }
 
-.center-search-container .nav-search-input {
+.nav-search-content .nav-search-input {
     flex: 1;
     background-color: transparent;
     line-height: 20px;
@@ -72,4 +72,65 @@
 
 .center-search-container .nav-search-button:hover {
     background-color: #e3e4e5;
+}
+
+.right-entry {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.right-entry .avatar {
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.right-entry .avatar a {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    background-color: #00aeec;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.right-entry .right-entry-item {
+    min-width: 50px;
+    margin-right: 4px;
+}
+
+.right-entry .right-entry-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.right-entry-item a span {
+    font-size: 13px;
+}
+
+.right-entry .upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #fb7299;
+    margin-left: 10px;
+}
+
+.right-entry .upload span {
+    margin-left: 5px;
 }
