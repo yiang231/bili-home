@@ -134,3 +134,152 @@
 .right-entry .upload span {
     margin-left: 5px;
 }
+
+.bili-nav {
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+.bili-banner {
+    position: relative;
+    height: 155px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bili-banner img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /*自适应缩放*/
+    object-fit: cover;
+}
+
+.bili-banner .logo {
+    height: 100%;
+    width: 100%;
+    padding: 0 64px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bili-banner .logo a {
+    position: relative;
+    height: 78px;
+    width: 162px;
+    margin-bottom: 10px;
+}
+
+.bili-banner .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .4), transparent);
+}
+
+.bili-channel {
+    height: 110px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+}
+
+.bili-channel .channel-icons {
+    display: flex;
+}
+
+.bili-channel .channel-icons a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 24px;
+}
+
+.bili-channel .icon-bg {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 6px;
+}
+
+.bili-channel .icon-bg_dynamic {
+    background-color: #ff9219;
+}
+
+.bili-channel .icon-bg_popular {
+    background-color: #f07775;
+}
+
+.bili-channel .icon-bg_channel {
+    background-color: #59ca73;
+}
+
+.bili-channel .icon-bg svg {
+    width: 25px;
+    height: 25px;
+}
+
+.bili-channel span {
+    text-align: center;
+}
+
+.bili-channel .right-channel-container {
+    width: 100%;
+    display: flex;
+}
+
+.bili-channel .right-channel-container .channel-items_left {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    width: 100%;
+}
+
+.bili-channel .right-channel-container .channel-items_left a {
+    height: 26px;
+    line-height: 26px;
+    background-color: #f6f7f8;
+    border: 1px solid #f1f2f3;
+    border-radius: 6px;
+    text-align: center;
+    color: #61666d;
+}
+
+.bili-channel .right-channel-container .channel-items_right {
+    display: grid;
+    width: 240px;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+    flex-shrink: 0;
+    grid-auto-flow: column;
+    margin-left: 30px;
+    border-left: 1px solid #e2e5e7;
+}
+
+.bili-channel .right-channel-container .channel-items_right a {
+    width: 100%;
+    height: 28px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bili-channel .right-channel-container .channel-items_right a svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    fill: #61666d;
+}
+
+.bili-channel .right-channel-container .channel-items_right a span {
+    color: #61666d;
+}
